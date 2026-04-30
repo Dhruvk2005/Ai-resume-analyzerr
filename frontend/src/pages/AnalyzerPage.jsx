@@ -73,7 +73,7 @@ function ScoreRing({ score }) {
   return (
     <div className="relative flex h-36 w-36 items-center justify-center">
       <div
-        className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500/20 via-transparent to-cyan-500/20 blur-xl"
+        className="absolute inset-0 rounded-full bg-gradient-to-br from-zinc-800/20 via-transparent to-zinc-700/16 blur-xl"
         aria-hidden
       />
       <svg className="relative h-36 w-36 -rotate-90" viewBox="0 0 120 120">
@@ -114,7 +114,7 @@ function TagList({ title, items, variant }) {
     "rounded-lg px-3 py-1.5 text-sm font-medium border backdrop-blur-sm transition-colors";
   const styles =
     variant === "good"
-      ? "border-emerald-500/35 bg-emerald-500/10 text-emerald-200 shadow-[inset_0_1px_0_0_rgba(52,211,153,0.12)]"
+      ? "border-zinc-700/35 bg-zinc-800/10 text-zinc-300 shadow-[inset_0_1px_0_0_rgba(30,30,30,0.08)]"
       : "border-amber-500/35 bg-amber-500/10 text-amber-100 shadow-[inset_0_1px_0_0_rgba(251,191,36,0.1)]";
 
   if (!items?.length) {
@@ -236,7 +236,7 @@ export default function AnalyzerPage() {
           </div>
           <Link
             to="/"
-            className="text-sm font-medium text-zinc-400 transition hover:text-cyan-400"
+            className="text-sm font-medium text-zinc-400 transition hover:text-zinc-300"
           >
             ← Back to home
           </Link>
@@ -264,7 +264,7 @@ export default function AnalyzerPage() {
                   type="file"
                   accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                   onChange={(e) => setFile(e.target.files?.[0] || null)}
-                  className="block w-full cursor-pointer text-sm text-zinc-400 file:mr-4 file:rounded-xl file:border-0 file:bg-gradient-to-r file:from-violet-600 file:to-fuchsia-600 file:px-4 file:py-2.5 file:text-sm file:font-semibold file:text-white file:shadow-md hover:file:brightness-110"
+                  className="block w-full cursor-pointer text-sm text-zinc-400 file:mr-4 file:rounded-xl file:border-0 file:bg-gradient-to-r file:from-zinc-800 file:to-zinc-700 file:px-4 file:py-2.5 file:text-sm file:font-semibold file:text-white file:shadow-md hover:file:brightness-95"
                 />
               </div>
 
@@ -276,7 +276,7 @@ export default function AnalyzerPage() {
                 onChange={(e) => setJobDescription(e.target.value)}
                 rows={10}
                 placeholder="Paste the full job posting here (role, requirements, nice-to-haves)..."
-                className="mt-2 w-full resize-y rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                className="mt-2 w-full resize-y rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-zinc-500/60 focus:outline-none focus:ring-2 focus:ring-zinc-500/20"
               />
 
               {error && (
@@ -288,7 +288,7 @@ export default function AnalyzerPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 via-fuchsia-600 to-orange-500 px-4 py-3.5 font-display text-sm font-semibold text-white shadow-lg shadow-fuchsia-500/25 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-55"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-zinc-800 via-zinc-700 to-zinc-600 px-4 py-3.5 font-display text-sm font-semibold text-white shadow-lg shadow-black/30 transition hover:brightness-95 disabled:cursor-not-allowed disabled:opacity-55"
               >
                 {loading ? (
                   <>
@@ -305,7 +305,7 @@ export default function AnalyzerPage() {
           <section className="lg:col-span-3">
             {!result && !loading && (
               <div className="flex min-h-[320px] flex-col items-center justify-center rounded-2xl border border-dashed border-zinc-700/80 bg-zinc-900/30 p-8 text-center backdrop-blur-sm">
-                <div className="rounded-2xl border border-zinc-700/60 bg-gradient-to-br from-violet-500/10 to-cyan-500/10 p-5 text-cyan-400/90">
+                <div className="rounded-2xl border border-zinc-700/60 bg-gradient-to-br from-zinc-800/10 to-zinc-700/10 p-5 text-zinc-300/90">
                   <svg
                     className="h-10 w-10"
                     fill="none"
@@ -323,14 +323,14 @@ export default function AnalyzerPage() {
                 <p className="mt-5 max-w-sm text-sm leading-relaxed text-zinc-400">
                   Upload a resume and add a job description. You will get a
                   score, skill gaps, and tailored suggestions powered by{" "}
-                  <span className="text-cyan-400">Gemini 2.5 Flash</span>.
+                  <span className="text-zinc-300">Gemini 2.5 Flash</span>.
                 </p>
               </div>
             )}
 
             {loading && (
               <div className="flex min-h-[320px] flex-col items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900/50 p-8 backdrop-blur-md">
-                <div className="h-10 w-10 animate-spin rounded-full border-4 border-zinc-700 border-t-cyan-400" />
+                <div className="h-10 w-10 animate-spin rounded-full border-4 border-zinc-700 border-t-zinc-400" />
                 <p className="mt-4 text-sm font-medium text-zinc-400">
                   Extracting text and running AI analysis…
                 </p>
@@ -348,7 +348,7 @@ export default function AnalyzerPage() {
                   <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:justify-between">
                     <div className="flex flex-col items-center sm:items-start">
                       <div className="mb-1 flex items-center gap-2">
-                        <span className="h-1.5 w-8 rounded-full bg-gradient-to-r from-violet-500 to-cyan-400" />
+                        <span className="h-1.5 w-8 rounded-full bg-gradient-to-r from-zinc-700 to-zinc-600" />
                         <h2 className="font-display text-lg font-semibold text-white">
                           Fit overview
                         </h2>
@@ -362,14 +362,14 @@ export default function AnalyzerPage() {
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-2">
-                  <div className="rounded-2xl border border-emerald-500/20 bg-zinc-900/50 p-6 shadow-lg shadow-emerald-950/20 backdrop-blur-sm">
+                  <div className="rounded-2xl border border-zinc-700/20 bg-zinc-900/50 p-6 shadow-lg shadow-black/20 backdrop-blur-sm">
                     <TagList
                       title="Detected skills"
                       items={result.detectedSkills}
                       variant="good"
                     />
                   </div>
-                  <div className="rounded-2xl border border-amber-500/20 bg-zinc-900/50 p-6 shadow-lg shadow-amber-950/20 backdrop-blur-sm">
+                  <div className="rounded-2xl border border-zinc-700/20 bg-zinc-900/50 p-6 shadow-lg shadow-black/20 backdrop-blur-sm">
                     <TagList
                       title="Missing / to strengthen"
                       items={result.missingSkills}
@@ -386,7 +386,7 @@ export default function AnalyzerPage() {
                       variant="good"
                     />
                   </div>
-                  <div className="rounded-2xl border border-amber-500/20 bg-zinc-900/50 p-6 shadow-lg shadow-amber-950/20 backdrop-blur-sm">
+                  <div className="rounded-2xl border border-emerald-500/20 bg-zinc-900/50 p-6 shadow-lg shadow-emerald-950/20 backdrop-blur-sm">
                     <TagList
                       title="Improvements"
                       items={result.improvements}
@@ -405,7 +405,7 @@ export default function AnalyzerPage() {
                         key={i}
                         className="flex gap-3 text-sm leading-relaxed text-zinc-300"
                       >
-                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-violet-500/20 text-xs font-bold text-violet-300">
+                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-zinc-800/20 text-xs font-bold text-zinc-300">
                           {i + 1}
                         </span>
                         <span className="pt-0.5">{s}</span>

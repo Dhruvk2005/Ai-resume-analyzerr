@@ -58,7 +58,7 @@ export default function SignupPage() {
                 autoComplete="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="mt-2 w-full rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                className="mt-2 w-full rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-zinc-500/60 focus:outline-none focus:ring-2 focus:ring-zinc-500/20"
                 placeholder="Jane Doe"
               />
             </div>
@@ -72,7 +72,7 @@ export default function SignupPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="mt-2 w-full rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                className="mt-2 w-full rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-zinc-500/60 focus:outline-none focus:ring-2 focus:ring-zinc-500/20"
                 placeholder="you@example.com"
               />
             </div>
@@ -87,7 +87,7 @@ export default function SignupPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 minLength={8}
-                className="mt-2 w-full rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                className="mt-2 w-full rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-emerald-500/60 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
                 placeholder="At least 8 characters"
               />
             </div>
@@ -101,7 +101,7 @@ export default function SignupPage() {
                 value={confirm}
                 onChange={(e) => setConfirm(e.target.value)}
                 required
-                className="mt-2 w-full rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                className="mt-2 w-full rounded-xl border border-zinc-700/80 bg-charcoal-925/90 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-emerald-500/60 focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
                 placeholder="Repeat password"
               />
             </div>
@@ -115,7 +115,7 @@ export default function SignupPage() {
             <button
               type="submit"
               disabled={loading}
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 via-fuchsia-600 to-orange-500 py-3.5 font-display text-sm font-semibold text-white shadow-lg shadow-fuchsia-500/25 transition hover:brightness-110 disabled:opacity-60"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-zinc-800 via-zinc-700 to-zinc-600 py-3.5 font-display text-sm font-semibold text-white shadow-lg shadow-black/30 transition hover:brightness-95 disabled:opacity-60"
             >
               {loading ? (
                 <>
@@ -132,7 +132,7 @@ export default function SignupPage() {
             Already have an account?{" "}
             <Link
               to="/login"
-              className="font-semibold text-cyan-400 hover:text-cyan-300"
+              className="font-semibold text-zinc-300 hover:text-zinc-200"
             >
               Log in
             </Link>

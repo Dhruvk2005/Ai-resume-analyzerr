@@ -6,13 +6,13 @@ export default function MarketingNav() {
 
   return (
     <header className="relative border-b border-zinc-800/80 bg-zinc-900/40 backdrop-blur-xl">
-      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-violet-500/50 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-zinc-700/40 to-transparent" />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link to="/" className="flex items-center gap-3">
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 to-fuchsia-600 p-[1px] shadow-glow-violet">
+          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-zinc-800 to-zinc-700 p-[1px] shadow-glow-dark">
             <div className="flex h-full w-full items-center justify-center rounded-[11px] bg-zinc-900">
               <svg
-                className="h-5 w-5 text-fuchsia-300"
+                className="h-5 w-5 text-zinc-300"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -27,7 +27,7 @@ export default function MarketingNav() {
             </div>
           </div>
           <span className="font-display text-[30px] font-bold text-white">
-           CVInsight
+           AI Resume analyzer
           </span>
         </Link>
 
@@ -43,7 +43,7 @@ export default function MarketingNav() {
               <button
                 type="button"
                 onClick={() => logout()}
-                className="rounded-lg border border-zinc-600 bg-zinc-800/50 px-3 py-2 text-sm font-medium text-zinc-200 transition hover:border-violet-500/50 hover:text-white"
+                className="rounded-lg border border-zinc-600 bg-zinc-800/50 px-3 py-2 text-sm font-medium text-zinc-200 transition hover:border-zinc-500/50 hover:text-white"
               >
                 Log out
               </button>
@@ -58,7 +58,7 @@ export default function MarketingNav() {
               </Link>
               <Link
                 to="/signup"
-                className="rounded-lg bg-gradient-to-r from-violet-600 to-fuchsia-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-fuchsia-500/20 transition hover:brightness-110"
+                className="rounded-lg bg-gradient-to-r from-zinc-800 to-zinc-700 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-black/40 transition hover:brightness-95"
               >
                 Sign up
               </Link>

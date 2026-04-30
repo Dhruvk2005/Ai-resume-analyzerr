@@ -16,13 +16,13 @@ export default {
       },
       boxShadow: {
         glow: {
-          violet: "0 0 60px -12px rgba(139, 92, 246, 0.45)",
-          cyan: "0 0 50px -15px rgba(34, 211, 238, 0.35)",
+          dark: "0 0 60px -18px rgba(0,0,0,0.6)",
+          muted: "0 0 40px -16px rgba(30,30,30,0.6)",
         },
       },
       backgroundImage: {
         "grid-dark":
-          "linear-gradient(to right, rgb(39 39 42 / 0.35) 1px, transparent 1px), linear-gradient(to bottom, rgb(39 39 42 / 0.35) 1px, transparent 1px)",
+          "linear-gradient(to right, rgb(10 10 12 / 0.28) 1px, transparent 1px), linear-gradient(to bottom, rgb(10 10 12 / 0.28) 1px, transparent 1px)",
       },
     },
   },
