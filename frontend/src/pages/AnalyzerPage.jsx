@@ -323,7 +323,7 @@ export default function AnalyzerPage() {
                 <p className="mt-5 max-w-sm text-sm leading-relaxed text-zinc-400">
                   Upload a resume and add a job description. You will get a
                   score, skill gaps, and tailored suggestions powered by{" "}
-                  <span className="text-zinc-300">Gemini 2.5 Flash</span>.
+                  <span className="text-zinc-300">Gemini 1.5 Flash</span>.
                 </p>
               </div>
             )}

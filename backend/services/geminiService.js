@@ -219,7 +219,7 @@ async function analyzeResumeWithGemini(resumeText, jobDescription) {
   const primaryModel = (process.env.GEMINI_MODEL || DEFAULT_MODEL).trim();
   const modelCandidates = [
     primaryModel,
-    // Common fallbacks (accounts may differ on availability)
+    
     "gemini-2.5-flash",
     "gemini-2.0-flash",
     "gemini-1.5-pro",
